@@ -1,0 +1,164 @@
+body{
+    margin-left: 270px;
+    margin-right: 270px;
+}
+.thanhcongcu{
+    display: flex;
+    border-radius: 40px;
+    justify-content: space-between;
+    background-color: orangered;
+    height: 47px;
+    width: 980px;
+    margin-bottom: 17px;
+}
+.thanhcongcu__button{
+    margin: auto;
+}
+.thanhcongcu--button{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.thanhcongcu--button:hover{
+    background-color:orange;
+}
+#id{
+    background-color: orangered;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 775px;
+    padding: 8px;
+}
+.Danhmuc{
+    display: flex;
+    height: 300px;
+    width: 191px;
+    flex-direction: column;
+    border-style: groove;
+    text-align: center;
+    flex-basis: 34px;
+}
+.Danhmuc__button{
+    background-color: #97f0f0;
+    border: none;
+    align-items: flex-start;
+    padding-top: 8px ;
+}
+.Danhmuc--button{
+    background-color: orangered;
+    border: none;
+    padding-top: 8px;
+    color: white;
+}
+.Danhmuc__button:hover{
+    background-color:orange;
+}
+#anh{
+    display: block;
+    margin-top: -304px;
+    margin-left: 215px;
+    height: 243px;
+    width: 764px;
+}
+#duongdanfb{
+    margin-left: 300px;
+    text-decoration: none
+}
+.timkiem{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.timkiem__giohang{
+    height: 20px;
+    width: 30px;
+    margin-left: 10px;
+}
+#tieudesanpham{
+    text-decoration: none;
+    margin-left: 220px;
+    color: black;
+}
+hr{
+    margin-left: 215px;
+    width: 760px;
+    height: 2px;
+    background-color: orangered;
+}
+.Traicay{
+    display: flex;
+    border: groove;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 220px;
+    width: 760px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.TraicayMy__khuon{
+    border: groove;
+    height: 240px;
+    width: 180px;
+    margin-bottom:10px;
+    text-align: center;
+}
+#anhtrongkhuon{
+    margin-top: 20px;
+    height: 100px;
+    width: 165px;
+}
+#Tensp{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#Giasp{
+    margin-top: 10px;;
+    color: blue;
+    margin-bottom: 10px;
+}
+.Traicay--nut{
+    width: 130px;
+    height: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+}
+.Traicay--MuaNgay{
+    background-color: aqua;
+}
+.Traicay--ThemVaoGio{
+    background-color: coral;
+}
+.Traicay--MuaNgay:hover{
+    background-color: rgb(60, 115, 97);
+}
+.Traicay--ThemVaoGio:hover{
+    background-color: chocolate;
+}
+.Sanphammoi{
+    display: flex;
+    flex-direction: column;
+    margin-top: -1148px;
+    height: auto;
+    width: 191px;
+    flex-direction: column;
+    border-style: groove;
+    text-align: center;
+    flex-basis: 34px;
+}
+.Sanphammoi--button{
+    background-color: orangered;
+    border: none;
+    padding-top: 8px;
+    color: white;
+}
+.Sanphammoi__thongtin{
+    height: 300px;
+    width: 50px;
+    border: groove;
+}
+
+
