@@ -1,0 +1,18 @@
+#test1{
+    border: 5px solid red;
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+#p1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    /* position: relative;
+    left: 400px; */
+}
+#p2{
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+}
