@@ -45,7 +45,7 @@
                     </div>
                     <div class="mota">
                         <div id="mota">
-                            <hr>
+                            <!-- <hr> -->
                             <strong>Cam navel ruột vàng Mỹ <br></strong>
                             <strong>Gía bán buôn 1.300.000đ/thùng 18kg</strong><br>
                             <strong>Đặc điểm: Cam Navel ruột vàng Mỹ vỏ màu vàng, ruột màu vàng đậm, vị ngọt thanh, không hạt, mọng nước. Thường dùng để ăn chứ không ép nước. Nên chọn quả sáng màu, da mịn, tròn trịa, cầm nặng tay.</strong><br>
@@ -65,7 +65,7 @@
                             <h3>Hệ Thống MBG MART - Trái cây, bánh kẹo, thực phẩm nhập khẩu</h3>
                             <p><strong>Mã sản phẩm:</strong> Cam My </p>
                             <p><strong>Tình Trạng:</strong> Còn hàng</p>
-                            <hr>
+                            <!-- <hr> -->
                             <p style="font-size: 30px;color: chartreuse;">Giá: 0 đ</p>
                         </div>
                     </div>
@@ -88,7 +88,82 @@
                 </div>
             </div>
         </div>
+        <div class="than4">
+            <div class="banut">
+                <button class="nut" onclick="hiennoidung('ttsp')">
+                    <strong>Thông tin sản phẩm</strong>
+                </button>
+                <button class="nut" onclick="hiennoidung('spcl')">
+                    <strong>Sản phẩm cùng loại(8)</strong>
+                </button>
+                <button class="nut" onclick="hiennoidung('dg')">
+                    <strong>Đánh giá (0)</strong>
+                </button>
+            </div>
+            <div class="noidung">
+                <div id="noidungchinh">
+                    <div id="noidungnut">
+                        <div id="ttsp" class="noidungnut">
+                            <div>
+                                <h3>Đặc điểm: Cam Navel ruột vàng Mỹ vỏ màu vàng, ruột màu vàng đậm, vị ngọt thanh, không hạt, mọng nước.</h3>
+                                <h3>Thường dùng để ăn chứ không ép nước. Nên chọn quả sáng màu, da mịn, tròn trịa, cầm nặng tay.</h3>
+                                <br>
+                                <strong>Giá trị dinh dưỡng :</strong>
+                                <p>Cam có chứa nhiều Vitamin C, có tác dụng hồi phục sức khỏe nhanh, tốt cho da, chống lão hóa, tốt cho người ốm.
+                                    Ăn cam thường xuyên sẽ giúp bảo vệ bạn khỏi mắc các bệnh truyền nhiễm do virus, giảm đáng kể nguy cơ mắc bệnh sỏi thận. Nếu bạn muốn tránh lượng calo dư thừa, hãy thêm cam Navel Mỹ vào chế độ dinh dưỡng hằng ngày của gia đình mình.</p>
+                                    <div class="anh_trong_ttsp">
+                                        <img src="minhhoa.jpg" alt="minhhoa">
+                                    </div>
+                                <p><strong>FruitShop lưu ý Quý Khách hàng:</strong>Bảo quản Cam Navel Mỹ trong điều kiện 7 - 10 độ C, nhiệt độ thấp hơn hoặc cao hơn sẽ làm Cam nhanh hỏng.</p>
+                                <h3>Liên hệ:</h3>
+                                <h3>Công ty TNHH Xuất Nhập Khẩu MBG</h3>
+                                <h3>Bán và giới thiệu sản phẩm: số 22 Vũ Phạm Hàm, Trung Hoà, Cầu Giấy, Hà Nội </h3>
+                                <h3>Kho hàng: Lô 39E, KCN Quang Minh, Mê Linh, Hà Nội </h3>
+                                <h3>Web: <a href="fruitshop" style="text-decoration: none;color: rgb(25, 178, 238);">www.Fruitshop.com.vn</a></h3>
+                                <h3>Page: <a href=" https://www.facebook.com/BanBuonHoaQuaNhapKhau/" style="text-decoration: none;color: rgb(25, 178, 238);"> https://www.facebook.com/BanBuonHoaQuaNhapKhau/</a></h3>
+                                <h3>Hotline: </h3>
+                                <h3>Lẻ: 0243.9972.192 - 0838.996.966</h3>
+                                <h3>Sỉ: 0938.699.666 - 0939.699.666</h3>
+                                <h3>0936.930.568 - 0936.938.568</h3>
+                                <h3>(Cập nhật hàng mới, đặt hàng qua Zalo, Viber, tin nhắn, call...) <br>
+                                    Chuyển hàng từ Hà Nội đi tất cả các tỉnh thành miền bắc và miền Trung</h3>
+                                <h3>Mua Lẻ:</h3>
+                                <h3>Hệ Thống MBG MART - Trái cây, bánh kẹo, thực phẩm nhập khẩu</h3>
+                            </div>
+                        </div>
+                        <div id="spcl" class="noidungnut" style="display: block;">
+                            san pham cung loai
+                        </div>
+                        <div id="dg" class="noidungnut" style="display: block;">
+                            danh gia
+                        </div>
+                    </div>
+                </div>
+                <div id="benphainoidung">
+                </div>
+            </div>
+        </div>
     </div>
-
+    <script>
+        // function noidungnut({
+        //     noidung = ''
+        // }){
+        //     const main = document.getElementById('noidungnut');
+        //     if (main){
+        //         const noidungnut = document.createElement('div');
+        //         noidungnut.classList.add('noidungnut');
+        //         noidungnut.innerHTML = `${noidung}`;
+        //         main.appendChild(noidungnut);
+        //     }
+        // }
+        function hiennoidung(tennut){
+            var i;
+            var x = document.getElementsByClassName('noidungnut');
+            for(i=0;i<3;i++){
+                x[i].style.display = 'none';
+            }
+            document.getElementById(tennut).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
