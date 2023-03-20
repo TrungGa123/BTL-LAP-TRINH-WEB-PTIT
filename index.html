@@ -86,17 +86,18 @@
                         <li id="l8"><a href="nuockhac">Trái cây nước khác</a></li>
                     </ul>
                 </div>
+                <div>(san pham lien quan)</div>
             </div>
         </div>
         <div class="than4">
             <div class="banut">
-                <button class="nut" onclick="hiennoidung('ttsp')">
+                <button class="nut" id="nut1" style="background-color: white;" onclick="hiennoidung('ttsp','nut1')">
                     <strong>Thông tin sản phẩm</strong>
                 </button>
-                <button class="nut" onclick="hiennoidung('spcl')">
+                <button class="nut" id="nut2" onclick="hiennoidung('spcl','nut2')">
                     <strong>Sản phẩm cùng loại(8)</strong>
                 </button>
-                <button class="nut" onclick="hiennoidung('dg')">
+                <button class="nut" id="nut3" onclick="hiennoidung('dg','nut3')">
                     <strong>Đánh giá (0)</strong>
                 </button>
             </div>
@@ -156,13 +157,18 @@
         //         main.appendChild(noidungnut);
         //     }
         // }
-        function hiennoidung(tennut){
+        function hiennoidung(tennut,nut){
             var i;
             var x = document.getElementsByClassName('noidungnut');
+            var y = document.getElementsByClassName('nut')
             for(i=0;i<3;i++){
                 x[i].style.display = 'none';
             }
+            for(i=0;i<3;i++){
+                y[i].style = "background-color: rgb(207, 222, 224);"
+            }
             document.getElementById(tennut).style.display = 'block';
+            document.getElementById(nut).style = "background-color: white;";
         }
     </script>
 </body>
