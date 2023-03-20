@@ -69,11 +69,13 @@ div{
     position: relative;
     left: 17%;
     box-sizing: border-box;
+    /* border: 1px solid; */
 }
 .than0{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     margin-top: 10px;
+    /* border: 1px solid; */
 }
 .than1{
     /* border: 1px solid; */
@@ -85,6 +87,11 @@ div{
     justify-content: space-between;
     left: 10%;
     width: 100%;
+    /* height: 100%; */
+    /* border: 1px solid; */
+}
+.than3{
+    /* border: 1px solid; */
     height: 100%;
 }
 .danhmuc{
@@ -116,7 +123,69 @@ div{
     color: red;
 }
 .tendanhmuc{
-    background-color: rgb(252, 92, 111);
+    background-color: aliceblue;
+    margin-left: 10px;
+}
+.sanphamlienquan{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sp{
+    text-align: center;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+.sp a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.sanphamlienquan img{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+}
+.sanphamlienquan__tenvagia{
+    margin-bottom: 10px;
+}
+.sanphamlienquan .sp:hover{
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+.noidungnut .sp:hover{
+    transform: scale(1.05);
+}
+.sanphamlienquan__tenvagia #tensp{
+    color:blueviolet ;
+    /* border: 1px solid; */
+    margin: 10px 0px 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sp a:hover{
+    opacity: 0.6;
+}
+.sanphamlienquan__tenvagia #giasp{
+    color: green;
+}
+.sanphamlienquan__themgio button{
+    margin-bottom: 10px;
+    background-color: rgb(166, 199, 234);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    height: 20px;
+}
+.sanphamlienquan hr{
+    height: 1px;
+    background-color:  orange;
+}
+.sanphamlienquan .splq strong{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 .mota{
     text-align: left;
@@ -171,15 +240,20 @@ div{
     margin-left: 10px;
     border: none;
 }
-#benphainoidung{
-    width: 200px;
-    height: 100%;
-}
 .anh_trong_ttsp{
-
+    max-width: 100%;
 }
 #noidungchinh{
-    width: calc(100% - 200px);
+    width: 100%;
     border: 1px solid rgb(198, 191, 191);
     height: 100%;
+}
+.noidungnut #ospcl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+.than4{
+    /* border: 1px solid; */
 }
