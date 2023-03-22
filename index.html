@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="than">
@@ -13,7 +14,7 @@
             <img class="anh_logo" src="image/logo.jpg" alt="logo" title="logo">
             <div class="timkiem">
                 <button class="nuttimkiem">
-
+                    <i class="fas fa-search"></i>
                 </button>
                 <input id="otimkiem" type="text" name="search" value="" placeholder="tìm kiếm">
             </div>
@@ -33,7 +34,7 @@
                 <div class="vitri">
                     <div>
                         <a href="trangchu">Trang chủ</a> » <a href="traicaymy">Trái cây Mỹ</a> » <a href="qua">Quả</a>
-                        <hr style="height: 1px;background-color: coral;">
+                        <hr style="height: 1px;background-color: rgb(238, 152, 121);">
                     </div>
                     <div style="width: 100%;">
                         <h3 class="gioithieu">Trái cây Mỹ, cam</h3>
@@ -206,9 +207,372 @@
                                     </div>
                                 </div>
                                 <div id="dg" class="noidungnut" style="display: none;">
-                                    danh gia
+                                    <div class="odanhgia">
+                                        ẩn danh: đây là bài đánh giá nhằm mục đích test.
+                                    </div>
+                                    <div class="danhgia">
+                                        <h1>Viết đánh giá</h1>
+                                        <h3>Tên bạn:</h3>
+                                        <input class="nhapten" id="nhapten" type="text">
+                                        <br>
+                                        <div>
+                                            <strong>Đánh giá của bạn:</strong>
+                                            <textarea name="text" id="nhapdanhgia" cols="100%" rows="10"></textarea>
+                                            <span style="color: red;">Lưu ý: </span><span>không hỗ trợ HTML</span>
+                                            <br>
+                                        </div>
+                                        <div class="binhchon">
+                                            <b>Bình chọn:</b> Xấu
+                                            <input type="radio" name="rating" value="1"><input type="radio" name="rating" value="2"><input type="radio" name="rating" value="3"><input type="radio" name="rating" value="4"><input type="radio" name="rating" value="5">
+                                            Tốt
+                                        </div>
+                                        <br>
+                                        <b>Nhập mã kiểm tra vào ô bên dưới:</b><br>
+                                        <input type="text" id="nhapma">
+                                        <div id="captcha" selectable="False">
+
+                                        </div>
+                                        <div id="ketqua"></div>
+                                        <div class="tieptuc">
+                                            <button class="nuttieptuc" onclick="xacnhanma()">Tiếp tục</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br>
+                        <hr>
+                        <br>
+                        <br><br>
+                    </div>
+                    <div class="sanphammoi">
+                        <div class="sanphammoi_ten"><b>Sản phẩm mới</b></div>
+                        <hr>
+                        <div class="sanphammoi_osanpham">
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br><br>
+                    </div>
+                    <div class="sanphambanchay">
+                        <div class="sanphambanchay_ten">
+                            <b>Sản phẩm bán chạy</b>
+                            <hr>
+                        </div>
+                        <div class="sanphambanchay_osanpham">
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                            <div class="sp">
+                                <div class="sanphamlienquan__anh">
+                                    <a href="link_qua">
+                                        <img src="image/cam-ruot-vang-uc.jpg" alt="cam ruot vang uc">
+                                    </a>
+                                </div>
+                                <div class="sanphamlienquan__tenvagia">
+                                    <a href="link_qua">Cam ruột vàng Úc</a><br>
+                                    <strong id="giasp">110.000 đ</strong>
+                                </div>
+                                <div class="sanphamlienquan__themgio">
+                                    <button>Thêm vào giỏ</button>
+                                </div>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cuoitrang">
+                        <div class="tt">
+                            <h4>THÔNG TIN</h4>
+                            <hr style="background-color: rgb(226, 225, 225);width: 100%;">
+                            <ul>
+                                <li>Giới thiệu</li>
+                                <li>Chính sách bảo mật</li>
+                                <li>Chính sách hoàn lại tiền</li>
+                            </ul>
+                        </div>
+                        <div class="cskh">
+                            <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                            <hr style="background-color: rgb(226, 225, 225);width: 100%;">
+                            <ul>
+                                <li>Giới thiệu</li>
+                                <li>Chính sách bảo mật</li>
+                                <li>Chính sách hoàn lại tiền</li>
+                            </ul>
+                        </div>
+                        <div class="cnk">
+                            <h4>CHỨC NĂNG KHÁC</h4>
+                            <hr style="background-color: rgb(226, 225, 225);width: 100%;">
+                            <ul>
+                                <li>Giới thiệu</li>
+                                <li>Chính sách bảo mật</li>
+                                <li>Chính sách hoàn lại tiền</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -290,7 +654,42 @@
         //         main.appendChild(noidungnut);
         //     }
         // }
+        var captcha;
+        function taoma(){
+            document.getElementById("nhapma").value = "";
+            captcha = document.getElementById('captcha');
+            const listchar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var ma = '';
+            for(let i=1;i<=5;i++){
+                ma = ma + listchar.charAt(Math.random()*listchar.length);
+            }
+            captcha.innerHTML = ma;
+        }
+        function xacnhanma(){
+            const inp = document.getElementById('nhapma');
+            var set = document.getElementById('ketqua');
+            document.getElementById('ketqua').value = '';
+            if(inp.value==captcha.innerHTML){
+                var input_dg = document.getElementById('nhapdanhgia');
+                if(input_dg.value.length<20){
+                    set.innerHTML = 'Đánh giá phải dài hơn 20 kí tự';
+                    set.style = 'color: orange';
+                }
+                else{
+                    set.innerHTML = 'Đánh giá của bạn đã được ghi lại';
+                    set.style = 'color:chartreuse'
+                }
+            }
+            else{
+                set.innerHTML = `
+                    <p>bạn đã nhập sai. vui lòng thử lại!
+                `;
+                set.style = 'color: red';
+                taoma();
+            }
+        }
         function hiennoidung(tennut,nut){
+            taoma();
             var i;
             var x = document.getElementsByClassName('noidungnut');
             var y = document.getElementsByClassName('nut')

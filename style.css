@@ -27,12 +27,20 @@ div{
 }
 #otimkiem{
     width: 80%;
+    height: 15px;
     display: block;
 }
 .nuttimkiem{
     float: left;
-    width: 10%;
+    width: 15%;
     height: 20px;
+    box-sizing: border-box;
+    margin-right: 2px;
+}
+.nuttimkiem i{
+    font-size: 1rem;
+    align-items: center;
+    transform: rotate(90deg);
 }
 .menu ul{
     display: flex;
@@ -99,6 +107,7 @@ div{
     height: 360px;
     margin-left: 5px;
     background-color: aliceblue;
+    box-sizing: border-box;
 }
 .danhmuc ul{
     padding-left: 2px;
@@ -110,11 +119,14 @@ div{
     margin: 10px;
     overflow: hidden;
     padding: 5px;
+    padding: auto;
+    
 }
 .danhmuc li a{
     text-decoration: none;
     color: black;
     /* cursor: default; */
+    display: block;
 }
 .danhmuc li:hover{
     opacity: 1.5;
@@ -166,6 +178,7 @@ div{
 }
 .sp a:hover{
     opacity: 0.6;
+    box-sizing: border-box;
 }
 .sanphamlienquan__tenvagia #giasp{
     color: green;
@@ -177,6 +190,9 @@ div{
     border-radius: 20px;
     color: white;
     height: 20px;
+}
+.sanphamlienquan__themgio button:hover{
+    background-color:#b4a5a5 ;
 }
 .sanphamlienquan hr{
     height: 1px;
@@ -215,6 +231,13 @@ div{
 .vitri a{
     text-decoration: none;
     color: rgb(14, 145, 145);
+}
+hr{
+    border: none;
+    height: 1px;
+    padding: 0.2px 0;
+    /* color: rgb(238, 152, 121); */
+    background-color: rgb(238, 152, 121);
 }
 .than4{
     width: 100%;
@@ -256,4 +279,63 @@ div{
 }
 .than4{
     /* border: 1px solid; */
+}
+.tieptuc{
+    display: flex;
+    justify-content: right;
+}
+.tieptuc .nuttieptuc{
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transform: scale(1.2);
+    font-family: 'Times New Roman', Times, serif ;
+}
+.danhgia{
+    display: flex;
+    flex-direction: column;
+}
+.nhapten, #nhapma{
+    width: fit-content;
+}
+#captcha{
+    width: 70px;
+    text-align: center;
+    background-color: rgb(174, 239, 174);
+    display: inline-block;
+    user-select: none;
+}
+.odanhgia{
+    border: 1px solid;
+}
+.sanphammoi_osanpham{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.sanphambanchay_osanpham{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-bottom:1px solid rgb(226, 225, 225);
+}
+.sanphambanchay_osanpham .sp:hover{
+    transform: scale(1.05);
+}
+.sanphammoi_osanpham .sp:hover{
+    border: 1px solid orange;
+    border-radius: 20px;
+    /* padding: auto; */
+}
+.cuoitrang{
+    display: flex;
+    justify-content: space-between;
+}
+.cuoitrang h4{
+    text-align: center;
+    margin: 10px 0;
+    color:#594f4f;
 }
