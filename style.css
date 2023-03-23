@@ -339,3 +339,7 @@ hr{
     margin: 10px 0;
     color:#594f4f;
 }
+.cuoitrang a{
+    text-decoration: none;
+    color: black;
+}
